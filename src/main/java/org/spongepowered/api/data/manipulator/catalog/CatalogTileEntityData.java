@@ -86,7 +86,8 @@ public final class CatalogTileEntityData {
     /**
      * Represents the {@link Comparator} data.
      */
-    public static final Class<ComparisonData> COMPARISON_DATA = ComparisonData.class;
+    // TODO duplicated in Props
+    //public static final Class<ComparisonData> COMPARISON_DATA = ComparisonData.class;
     /**
      * Represents an int cooldown for a {@link Hopper}.
      */
@@ -122,7 +123,8 @@ public final class CatalogTileEntityData {
      * Represents a {@link TileEntity} that is signaling a redstone output.
      * Usually applicable to {@link Comparator}s and {@link DaylightDetector}s.
      */
-    public static final Class<SignaledOutputData> SIGNALED_OUTPUT_DATA = SignaledOutputData.class;
+    // TODO duplicated in props
+    //public static final Class<SignaledOutputData> SIGNALED_OUTPUT_DATA = SignaledOutputData.class;
     /**
      * Represents a {@link Sign}s data.
      */
