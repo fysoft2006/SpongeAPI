@@ -22,22 +22,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package org.spongepowered.api.entity.projectile;
+package org.spongepowered.api.data.marker;
 
-import org.spongepowered.api.data.manipulator.entity.DamagingData;
-import org.spongepowered.api.entity.Entity;
-
-/**
- * Represents a thrown egg.
- */
-public interface Egg extends Projectile {
-
-    /**
-     * Gets a copy of the current {@link DamagingData} that this egg will
-     * deal on an {@link Entity} when hit.
-     *
-     * @return A copy of the damaging data
-     */
-   DamagingData getDamagingData();
-
+public interface BanData extends GameData {
 }

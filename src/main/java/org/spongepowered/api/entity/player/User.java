@@ -27,6 +27,7 @@ package org.spongepowered.api.entity.player;
 import com.google.common.base.Optional;
 import org.spongepowered.api.GameProfile;
 import org.spongepowered.api.data.DataHolder;
+import org.spongepowered.api.data.DataObject;
 import org.spongepowered.api.data.DataSerializable;
 import org.spongepowered.api.data.manipulator.entity.AchievementData;
 import org.spongepowered.api.data.manipulator.entity.BanData;
@@ -88,7 +89,7 @@ public interface User extends DataHolder, Identifiable, ArmorEquipable, Tamer, D
     StatisticData getStatisticData();
 
     /**
-     * Gets a copy of the current {@link BanData} for this user.
+     * Gets a copy of the current {@link DataObject<BanData>} for this user.
      *
      * @return A copy of the ban data
      */

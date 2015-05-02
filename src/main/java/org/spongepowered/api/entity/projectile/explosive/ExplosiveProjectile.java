@@ -24,7 +24,12 @@
  */
 package org.spongepowered.api.entity.projectile.explosive;
 
+<<<<<<< HEAD
 import org.spongepowered.api.data.manipulator.entity.DamagingData;
+=======
+import org.spongepowered.api.data.DataObject;
+import org.spongepowered.api.data.marker.DamagingData;
+>>>>>>> Fix compile
 import org.spongepowered.api.entity.Entity;
 import org.spongepowered.api.entity.explosive.Explosive;
 import org.spongepowered.api.entity.projectile.Projectile;
@@ -42,6 +47,6 @@ public interface ExplosiveProjectile extends Projectile, Explosive {
      *
      * @return A copy of the damaging data
      */
-    DamagingData getDamagingData();
+    DataObject<DamagingData> getDamagingData();
 
 }

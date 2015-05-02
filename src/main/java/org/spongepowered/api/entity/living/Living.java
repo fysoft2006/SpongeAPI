@@ -51,6 +51,4 @@ public interface Living extends Entity {
      */
     DamageableData getMortalData();
 
-
-
 }
