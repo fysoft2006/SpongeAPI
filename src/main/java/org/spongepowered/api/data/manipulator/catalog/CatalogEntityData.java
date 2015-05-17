@@ -28,7 +28,6 @@ import org.spongepowered.api.GameProfile;
 import org.spongepowered.api.attribute.Attribute;
 import org.spongepowered.api.data.DataHolder;
 import org.spongepowered.api.data.DataManipulator;
-<<<<<<< HEAD:src/main/java/org/spongepowered/api/data/manipulator/catalog/CatalogEntityData.java
 import org.spongepowered.api.data.manipulator.AttributeData;
 import org.spongepowered.api.data.manipulator.DisplayNameData;
 import org.spongepowered.api.data.manipulator.DyeableData;
@@ -105,68 +104,6 @@ import org.spongepowered.api.data.type.HorseVariant;
 import org.spongepowered.api.data.type.OcelotType;
 import org.spongepowered.api.data.type.RabbitType;
 import org.spongepowered.api.data.type.SkeletonType;
-=======
-import org.spongepowered.api.data.manipulators.AttributeData;
-import org.spongepowered.api.data.manipulators.DisplayNameData;
-import org.spongepowered.api.data.manipulators.DyeableData;
-import org.spongepowered.api.data.manipulators.FireworkData;
-import org.spongepowered.api.data.manipulators.OwnableData;
-import org.spongepowered.api.data.manipulators.PotionEffectData;
-import org.spongepowered.api.data.manipulators.RepresentedItemData;
-import org.spongepowered.api.data.manipulators.TargetedLocationData;
-import org.spongepowered.api.data.manipulators.WetData;
-//import org.spongepowered.api.data.manipulators.entities.ExperienceHolderData;
-//import org.spongepowered.api.data.manipulators.entities.ExpirableData;
-//import org.spongepowered.api.data.manipulators.entities.ExplosiveRadiusData;
-//import org.spongepowered.api.data.manipulators.entities.EyeLocationData;
-import org.spongepowered.api.data.manipulators.entities.FallingBlockData;
-import org.spongepowered.api.data.manipulators.entities.FlyingData;
-import org.spongepowered.api.data.manipulators.entities.FoodData;
-import org.spongepowered.api.data.manipulators.entities.FuseData;
-import org.spongepowered.api.data.manipulators.entities.GameModeData;
-import org.spongepowered.api.data.manipulators.entities.GriefingData;
-import org.spongepowered.api.data.manipulators.entities.HealingSourceData;
-import org.spongepowered.api.data.manipulators.entities.HealthData;
-import org.spongepowered.api.data.manipulators.entities.HorseData;
-import org.spongepowered.api.data.manipulators.entities.IgniteableData;
-import org.spongepowered.api.data.manipulators.entities.InvisibilityData;
-import org.spongepowered.api.data.manipulators.entities.JoinData;
-import org.spongepowered.api.data.manipulators.entities.KnockbackData;
-import org.spongepowered.api.data.manipulators.entities.LeashData;
-import org.spongepowered.api.data.manipulators.entities.OcelotData;
-import org.spongepowered.api.data.manipulators.entities.OrbData;
-import org.spongepowered.api.data.manipulators.entities.PassengerData;
-import org.spongepowered.api.data.manipulators.entities.PersistingData;
-import org.spongepowered.api.data.manipulators.entities.PlayerCreatedData;
-import org.spongepowered.api.data.manipulators.entities.PlayingData;
-import org.spongepowered.api.data.manipulators.entities.RabbitData;
-import org.spongepowered.api.data.manipulators.entities.RespawnLocationData;
-import org.spongepowered.api.data.manipulators.entities.SaddleData;
-import org.spongepowered.api.data.manipulators.entities.ScreamingData;
-import org.spongepowered.api.data.manipulators.entities.ShatteringData;
-import org.spongepowered.api.data.manipulators.entities.ShearedData;
-import org.spongepowered.api.data.manipulators.entities.SittingData;
-import org.spongepowered.api.data.manipulators.entities.SizeData;
-import org.spongepowered.api.data.manipulators.entities.SkeletonData;
-import org.spongepowered.api.data.manipulators.entities.SleepingData;
-import org.spongepowered.api.data.manipulators.entities.SlimeData;
-import org.spongepowered.api.data.manipulators.entities.SneakingData;
-import org.spongepowered.api.data.manipulators.entities.StatisticData;
-import org.spongepowered.api.data.manipulators.entities.TameableData;
-import org.spongepowered.api.data.manipulators.entities.TargetLivingData;
-import org.spongepowered.api.data.manipulators.entities.VehicleData;
-import org.spongepowered.api.data.manipulators.entities.VelocityData;
-import org.spongepowered.api.data.manipulators.entities.VillagerZombieData;
-import org.spongepowered.api.data.manipulators.entities.WhitelistData;
-import org.spongepowered.api.data.types.Art;
-import org.spongepowered.api.data.types.DyeColor;
-import org.spongepowered.api.data.types.HorseColor;
-import org.spongepowered.api.data.types.HorseStyle;
-import org.spongepowered.api.data.types.HorseVariant;
-import org.spongepowered.api.data.types.OcelotType;
-import org.spongepowered.api.data.types.RabbitType;
-import org.spongepowered.api.data.types.SkeletonType;
->>>>>>> Fix compile:src/main/java/org/spongepowered/api/data/manipulators/catalogs/CatalogEntityData.java
 import org.spongepowered.api.entity.EnderCrystal;
 import org.spongepowered.api.entity.Entity;
 import org.spongepowered.api.entity.ExperienceOrb;
@@ -223,124 +160,124 @@ import org.spongepowered.api.world.weather.Weather;
  */
 public final class CatalogEntityData {
 
-//    /**
-//     * The {@link AchievementData} class that can be applied to
-//     * {@link Player}s.
-//     */
-//    public static final Class<AchievementData> ACHIEVEMENT_DATA = AchievementData.class;
-//    /**
-//     * The {@link AgeableData} that represents age determining whether an
-//     * {@link Entity} is a child or an adult. Always exists for
-//     * {@link Ageable} entities.
-//     */
-//    public static final Class<AgeableData> AGEABLE_DATA = AgeableData.class;
-//    /**
-//     * The {@link AgentData} that signifies that an {@link Agent}'s AI is
-//     * enabled.
-//     */
-//    public static final Class<AgentData> AGENT_DATA = AgentData.class;
-//    /**
-//     * The {@link AggressiveData} that signifies whether an {@link Agent} is
-//     * considered aggressive, may attack other entities.
-//     */
-//    public static final Class<AggressiveData> AGGRESSIVE_DATA = AggressiveData.class;
-//    /**
-//     * The {@link AngerableData} that signifies an {@link Agent} is angry but
-//     * will calm down after a certain amount of time has passed.
-//     */
-//    public static final Class<AngerableData> ANGERABLE_DATA = AngerableData.class;
-//    /**
-//     * The {@link ArtData} that signifies what piece of {@link Art} is being
-//     * displayed. It is applicable for {@link Painting} entities.
-//     */
-//    public static final Class<ArtData> ART_DATA = ArtData.class;
-//    /**
-//     * The {@link AttributeData} for many entities signifying various
-//     * {@link Attribute}s applied and manipulated.
-//     */
-//    public static final Class<AttributeData> ATTRIBUTE_DATA = AttributeData.class;
-//    /**
-//     * The {@link BanData} mainly for {@link User}s and their {@link Ban}s.
-//     */
-//    public static final Class<BanData> BAN_DATA = BanData.class;
-//    /**
-//     * Represents the mapped rotational data for all known body parts. Usually
-//     * applicable to {@link Human}s and {@link ArmorStand}s.
-//     */
-//    public static final Class<BodyPartRotationalData> BODY_PART_ROTATIONAL_DATA = BodyPartRotationalData.class;
-//    /**
-//     * Entities that have {@link BreathingData} when under water. Usually
-//     * applies to {@link Living} entities but not {@link Aquatic} entities.
-//     */
-//    public static final Class<BreathingData> BREATHING_DATA = BreathingData.class;
-//    /**
-//     * Signifies an entity is ready to breed. Usually applies to
-//     * {@link Animal}s, or sometimes for {@link Zombie}s to call
-//     * reinforcements.
-//     */
-//    public static final Class<BreedableData> BREEDABLE_DATA = BreedableData.class;
-//    /**
-//     * Mainly for {@link Villager}s to determine their applicable
-//     * {@link TradeOffer}s.
-//     */
-//    public static final Class<CareerData> CAREER_DATA = CareerData.class;
-//    /**
-//     * Represents whether an entity is considered "charged". Usually applies
-//     * to {@link Creeper}s.
-//     */
-//    public static final Class<ChargedData> CHARGED_DATA = ChargedData.class;
-//    /**
-//     * Signifies that an entity will perform a "critical hit" the next attack.
-//     * Usually applies to {@link Arrow}s.
-//     */
-//    public static final Class<CriticalHitData> CRITICAL_HIT_DATA = CriticalHitData.class;
-//    /**
-//     * Signifies that an entity can take damage and tracks it's last damage
-//     * source. Usually applies to {@link Living} entities.
-//     */
-//    public static final Class<DamageableData> DAMAGEABLE_DATA = DamageableData.class;
-//    /**
-//     * Signifies that an owner is going to deal a certain amount of damage
-//     * on the next "attack". Usually applicable to {@link Arrow}s and other
-//     * {@link Projectile}s.
-//     */
-//    public static final Class<DamagingData> DAMAGING_DATA = DamagingData.class;
-//    /**
-//     * Represents the custom name of an entity. Usually applies to
-//     * {@link Player}s and {@link Living} entities.
-//     */
-//    public static final Class<DisplayNameData> DISPLAY_NAME_DATA = DisplayNameData.class;
-//    /**
-//     * Signifies that the entity can be dyed a specific {@link DyeColor}.
-//     * Usually applies to {@link Sheep}.
-//     */
-//    public static final Class<DyeableData> DYEABLE_DATA = DyeableData.class;
-//    /**
-//     * Signifies that an entity is considered an "elder". Usually applies to
-//     * {@link Guardian}s.
-//     */
-//    public static final Class<ElderData> ELDER_DATA = ElderData.class;
-//    /**
-//     * Signifies that an entity can hold "experience". Usually applies to
-//     * {@link Player}s.
-//     */
-//    public static final Class<ExperienceHolderData> EXPERIENCE_HOLDER_DATA = ExperienceHolderData.class;
-//    /**
-//     * Signifies that an entity can expire after a certain amount of time.
-//     * Usually applies to {@link Weather}, {@link Endermite}s, and
-//     * {@link Item}s.
-//     */
-//    public static final Class<ExpirableData> EXPIRABLE_DATA_CLASS = ExpirableData.class;
-//    /**
-//     * Represents the "explosion radius" that an entity will have upon
-//     * detonation. Usually applies to all {@link Explosive}s.
-//     */
-//    public static final Class<ExplosiveRadiusData> EXPLOSIVE_RADIUS_DATA = ExplosiveRadiusData.class;
-//    /**
-//     * Represents an entity having the notion of a "head" and "eye location".
-//     * Usually applies to all {@link Living} entities.
-//     */
-//    public static final Class<EyeLocationData> EYE_LOCATION_DATA = EyeLocationData.class;
+    /**
+     * The {@link AchievementData} class that can be applied to
+     * {@link Player}s.
+     */
+    public static final Class<AchievementData> ACHIEVEMENT_DATA = AchievementData.class;
+    /**
+     * The {@link AgeableData} that represents age determining whether an
+     * {@link Entity} is a child or an adult. Always exists for
+     * {@link Ageable} entities.
+     */
+    public static final Class<AgeableData> AGEABLE_DATA = AgeableData.class;
+    /**
+     * The {@link AgentData} that signifies that an {@link Agent}'s AI is
+     * enabled.
+     */
+    public static final Class<AgentData> AGENT_DATA = AgentData.class;
+    /**
+     * The {@link AggressiveData} that signifies whether an {@link Agent} is
+     * considered aggressive, may attack other entities.
+     */
+    public static final Class<AggressiveData> AGGRESSIVE_DATA = AggressiveData.class;
+    /**
+     * The {@link AngerableData} that signifies an {@link Agent} is angry but
+     * will calm down after a certain amount of time has passed.
+     */
+    public static final Class<AngerableData> ANGERABLE_DATA = AngerableData.class;
+    /**
+     * The {@link ArtData} that signifies what piece of {@link Art} is being
+     * displayed. It is applicable for {@link Painting} entities.
+     */
+    public static final Class<ArtData> ART_DATA = ArtData.class;
+    /**
+     * The {@link AttributeData} for many entities signifying various
+     * {@link Attribute}s applied and manipulated.
+     */
+    public static final Class<AttributeData> ATTRIBUTE_DATA = AttributeData.class;
+    /**
+     * The {@link BanData} mainly for {@link User}s and their {@link Ban}s.
+     */
+    public static final Class<BanData> BAN_DATA = BanData.class;
+    /**
+     * Represents the mapped rotational data for all known body parts. Usually
+     * applicable to {@link Human}s and {@link ArmorStand}s.
+     */
+    public static final Class<BodyPartRotationalData> BODY_PART_ROTATIONAL_DATA = BodyPartRotationalData.class;
+    /**
+     * Entities that have {@link BreathingData} when under water. Usually
+     * applies to {@link Living} entities but not {@link Aquatic} entities.
+     */
+    public static final Class<BreathingData> BREATHING_DATA = BreathingData.class;
+    /**
+     * Signifies an entity is ready to breed. Usually applies to
+     * {@link Animal}s, or sometimes for {@link Zombie}s to call
+     * reinforcements.
+     */
+    public static final Class<BreedableData> BREEDABLE_DATA = BreedableData.class;
+    /**
+     * Mainly for {@link Villager}s to determine their applicable
+     * {@link TradeOffer}s.
+     */
+    public static final Class<CareerData> CAREER_DATA = CareerData.class;
+    /**
+     * Represents whether an entity is considered "charged". Usually applies
+     * to {@link Creeper}s.
+     */
+    public static final Class<ChargedData> CHARGED_DATA = ChargedData.class;
+    /**
+     * Signifies that an entity will perform a "critical hit" the next attack.
+     * Usually applies to {@link Arrow}s.
+     */
+    public static final Class<CriticalHitData> CRITICAL_HIT_DATA = CriticalHitData.class;
+    /**
+     * Signifies that an entity can take damage and tracks it's last damage
+     * source. Usually applies to {@link Living} entities.
+     */
+    public static final Class<DamageableData> DAMAGEABLE_DATA = DamageableData.class;
+    /**
+     * Signifies that an owner is going to deal a certain amount of damage
+     * on the next "attack". Usually applicable to {@link Arrow}s and other
+     * {@link Projectile}s.
+     */
+    public static final Class<DamagingData> DAMAGING_DATA = DamagingData.class;
+    /**
+     * Represents the custom name of an entity. Usually applies to
+     * {@link Player}s and {@link Living} entities.
+     */
+    public static final Class<DisplayNameData> DISPLAY_NAME_DATA = DisplayNameData.class;
+    /**
+     * Signifies that the entity can be dyed a specific {@link DyeColor}.
+     * Usually applies to {@link Sheep}.
+     */
+    public static final Class<DyeableData> DYEABLE_DATA = DyeableData.class;
+    /**
+     * Signifies that an entity is considered an "elder". Usually applies to
+     * {@link Guardian}s.
+     */
+    public static final Class<ElderData> ELDER_DATA = ElderData.class;
+    /**
+     * Signifies that an entity can hold "experience". Usually applies to
+     * {@link Player}s.
+     */
+    public static final Class<ExperienceHolderData> EXPERIENCE_HOLDER_DATA = ExperienceHolderData.class;
+    /**
+     * Signifies that an entity can expire after a certain amount of time.
+     * Usually applies to {@link Weather}, {@link Endermite}s, and
+     * {@link Item}s.
+     */
+    public static final Class<ExpirableData> EXPIRABLE_DATA_CLASS = ExpirableData.class;
+    /**
+     * Represents the "explosion radius" that an entity will have upon
+     * detonation. Usually applies to all {@link Explosive}s.
+     */
+    public static final Class<ExplosiveRadiusData> EXPLOSIVE_RADIUS_DATA = ExplosiveRadiusData.class;
+    /**
+     * Represents an entity having the notion of a "head" and "eye location".
+     * Usually applies to all {@link Living} entities.
+     */
+    public static final Class<EyeLocationData> EYE_LOCATION_DATA = EyeLocationData.class;
     /**
      * Represents a falling block that can deal damage upon landing.
      * Applies to {@link FallingBlock}s.

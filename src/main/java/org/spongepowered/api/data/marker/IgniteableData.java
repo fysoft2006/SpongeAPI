@@ -22,26 +22,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package org.spongepowered.api.entity.projectile.explosive;
+package org.spongepowered.api.data.marker;
 
-import org.spongepowered.api.data.manipulator.entity.DamagingData;
-import org.spongepowered.api.entity.Entity;
-import org.spongepowered.api.entity.explosive.Explosive;
-import org.spongepowered.api.entity.projectile.Projectile;
-
-/**
- * Represents a {@link Projectile} which is also an {@link Explosive}.
- */
-public interface ExplosiveProjectile extends Projectile, Explosive {
-
-    /**
-     * Gets the damaging data for this {@link ExplosiveProjectile}.
-     *
-     * <p>The damaging data defines how much damage the projectile will deal
-     * upon hitting an {@link Entity}, before the explosion.</p>
-     *
-     * @return A copy of the damaging data
-     */
-    DamagingData getDamagingData();
-
+public interface IgniteableData extends GameData {
 }
