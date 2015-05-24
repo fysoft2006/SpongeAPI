@@ -29,12 +29,10 @@ import org.spongepowered.api.data.value.*;
 
 /**
  * Represents some container of arbitrary data values.
- *
- * @param <D> The type of data that this DataObject is restricted to
  */
-public interface DataObject<D> {
+public interface DataObject {
 
-    boolean supports(BaseValue<?, ? extends D> value);
+    boolean supports(BaseValue<?> value);
 
     /**
      * Gets some value.
@@ -43,7 +41,7 @@ public interface DataObject<D> {
      * @param <E> The type of value
      * @return The value
      */
-    <E> Optional<E> get(GetterValue<E, ? extends D> value);
+    <E> Optional<E> get(GetterValue<E> value);
 
     /**
      * Gets some value, or the default.
@@ -53,7 +51,7 @@ public interface DataObject<D> {
      * @param <E> The type of value
      * @return The value
      */
-    <E> E getOrElse(GetterValue<E, ? extends D> value, E defaultValue);
+    <E> E getOrElse(GetterValue<E> value, E defaultValue);
 
     /**
      * Gets some value that is known to be present.
@@ -62,7 +60,7 @@ public interface DataObject<D> {
      * @param <E> The type of value
      * @return The value
      */
-    <E> E tryGet(GetterValue<E, ? extends D> value);
+    <E> E tryGet(GetterValue<E> value, Class<E> valueClass);
 
     /**
      * Sets some value.
@@ -72,51 +70,7 @@ public interface DataObject<D> {
      * @param <E> The type of value
      * @return This object
      */
-    <E> DataObject<D> set(SetterValue<E, ? extends D> value, E result);
-
-    /**
-     * Gets a data object with further restrictions on data.
-     *
-     * <p>As an example, use this to get a data "manipulator" from a more generic data object.</p>
-     *
-     * @param clazz The class of data to restrict to
-     * @param <V> The type of data to restrict to
-     * @return The nested data object
-     */
-    <V extends D> Optional<DataObject<V>> restrict(Class<V> clazz);
-
-    /**
-     * Gets a data object with further restrictions on data.
-     *
-     * <p>As an example, use this to get a data "manipulator" from a more generic data object.</p>
-     *
-     * @param value The value to restrict to
-     * @param <V> The type of data to restrict to
-     * @return The nested data object
-     */
-    <E, V extends D>  Optional<DataObject<V>> restrict(Value<E, V> value);
-
-    /**
-     * Gets a data object with further restrictions on data.
-     *
-     * <p>As an example, use this to get a data "manipulator" from a more generic data object.</p>
-     *
-     * @param clazz The class of data to restrict to
-     * @param <V> The type of data to restrict to
-     * @return The nested data object
-     */
-    <V extends D> Optional<DataObject<V>> tryRestrict(Class<V> clazz);
-
-    /**
-     * Gets a data object with further restrictions on data.
-     *
-     * <p>As an example, use this to get a data "manipulator" from a more generic data object.</p>
-     *
-     * @param value The value to restrict to
-     * @param <V> The type of data to restrict to
-     * @return The nested data object
-     */
-    <E, V extends D> DataObject<V> tryRestrict(Value<E, V> value);
+    <E> DataObject set(SetterValue<E> value, E result);
 
     /**
      * Copies all keys from the given data object to those which are supported in the current data object.
@@ -124,7 +78,7 @@ public interface DataObject<D> {
      * @param dataObject
      * @return
      */
-    DataObject<D> copyFrom(DataObject<? extends D> dataObject);
+    DataObject copyFrom(DataObject dataObject);
 
     /**
      * Copies as many keys as possible in the current data object to the given data object.
@@ -132,6 +86,6 @@ public interface DataObject<D> {
      * @param dataObject
      * @return
      */
-    DataObject<D> copyTo(DataObject<? super D> dataObject);
+    DataObject copyTo(DataObject dataObject);
 
 }

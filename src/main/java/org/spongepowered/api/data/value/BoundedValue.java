@@ -27,7 +27,7 @@ package org.spongepowered.api.data.value;
 import java.util.Comparator;
 
 // TODO Does a numeric property (int, double) imply boundedness for all possible cases?
-public interface BoundedValue<E, V> extends Value<E, V> {
+public interface BoundedValue<E> extends Value<E> {
 
     Comparator<E> getComparator();
 

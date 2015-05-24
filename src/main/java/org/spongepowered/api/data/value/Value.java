@@ -31,8 +31,7 @@ import org.spongepowered.api.util.annotation.CatalogedBy;
  * Marker interface for properties of a certain type.
  *
  * @param <E> The type of value that this property has
- * @param <V> The type of {@link DataObject}s this property is restricted to
  */
 @CatalogedBy(Values.class)
-public interface Value<E, V> extends GetterValue<E, V>, SetterValue<E, V> {
+public interface Value<E> extends GetterValue<E>, SetterValue<E> {
 }

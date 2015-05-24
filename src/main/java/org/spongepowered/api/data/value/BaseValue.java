@@ -24,10 +24,8 @@
  */
 package org.spongepowered.api.data.value;
 
-public interface BaseValue<E, V> {
+public interface BaseValue<E> {
 
     Class<E> getValueClass();
-
-    Class<V> getRestrictorClass();
 
 }

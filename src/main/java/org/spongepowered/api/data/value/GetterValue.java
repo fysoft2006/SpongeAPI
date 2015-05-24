@@ -34,5 +34,5 @@ import org.spongepowered.api.util.annotation.CatalogedBy;
  * @param <V> The type of {@link DataObject}s this property is restricted to
  */
 @CatalogedBy(Values.class)
-public interface GetterValue<E, V> extends BaseValue<E, V> {
+public interface GetterValue<E> extends BaseValue<E> {
 }
